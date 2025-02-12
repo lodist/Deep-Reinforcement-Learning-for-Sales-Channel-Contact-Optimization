@@ -23,6 +23,19 @@ Deep Reinforcement Learning (DRL) is particularly well-suited for this problem b
 
 By using DRL, this project enables a marketing strategy that evolves dynamically, reducing spam while maintaining high engagement, lowering unnecessary contact costs, and maximizing revenue.
 
+## Data and Notebooks
+
+Since the full dataset is too large and specific to a company, only samples are provided for demonstration purposes.
+
+### Data Files
+- **`data/DRL_PreDataset_Subset.csv`** – A sample dataset containing historical interactions, including past engagement metrics and customer demographics.
+- **`data/DRL_Training_Dataset_Subset.csv`** – A processed dataset formatted for reinforcement learning, structured with state-action-reward tuples.
+
+### Notebooks
+- **`notebooks/Prepare_Training_Data.ipynb`** – Preprocesses the raw dataset, engineering features and transforming the data into a reinforcement learning-friendly format.
+- **`notebooks/DRL.ipynb`** – Implements the training and evaluation of the reinforcement learning model using **Deep Q-Networks (DQN)**.
+
+
 ## Approach
 
 1. **Data Collection & Preprocessing**
