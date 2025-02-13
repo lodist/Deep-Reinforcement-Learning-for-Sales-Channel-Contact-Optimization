@@ -89,9 +89,9 @@ Model Cost per Reward Point: 0.4136 CHF
 Dataset Cost per Reward Point: 1.0859 CHF
 ```
 
-![Model Evaluation Graph](images/ModelVsDatset.png)
+![Model Evaluation Graph](images/ModelVsDataset.png)
 
-![Model Evaluation Graph](images/ModelVsDatset_2.png)
+![Model Evaluation Graph](images/ModelVsDataset_2.png)
 
 
 
