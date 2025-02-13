@@ -17,7 +17,6 @@ By incorporating **'No Action'** as an option, our model learns when to refrain 
 Deep Reinforcement Learning (DRL) is particularly well-suited for this problem because it allows an agent to learn optimal contact strategies dynamically through trial and error, rather than relying on static decision trees or predefined business rules. Unlike traditional machine learning approaches such as neural networks or random forest models, DRL provides the following advantages:
 
 - **Sequential Decision Making**: Unlike a classification or regression model that predicts a single outcome, DRL considers the long-term impact of each decision, ensuring that short-term gains do not lead to long-term losses (e.g., excessive messaging leading to unsubscriptions).
-- **Adaptive Learning**: While neural networks and random forests rely on historical data for predictions, DRL adapts its strategy over time, continuously improving based on new interactions.
 - **Optimized Trade-offs**: The reward function in DRL ensures that the model balances engagement with the risk of spamming customers. It penalizes unnecessary contacts that receive no response while reinforcing behaviors that lead to successful conversions.
 - **Handling Delayed Rewards**: Traditional models may struggle to associate long-term customer retention or eventual purchases with earlier outreach efforts. DRL naturally accounts for delayed rewards, making it more effective for optimizing sequences of actions.
 
@@ -32,7 +31,7 @@ Since the full dataset is too large and specific to a company, only samples are 
 - **`DRL_Training_Dataset_Subset.csv`** – A processed dataset formatted for reinforcement learning, structured with state-action-reward tuples.
 
 ### Notebooks
-- **`Prepare_Training_Data.ipynb`** – Preprocesses the raw dataset, engineering features and transforming the data into a reinforcement learning-friendly format.
+- **`Prepare_Training_Data.ipynb`** – Preprocesses the raw dataset, engineering features and transforming the data into a reinforcement learning-friendly format (State-Action-Reward).
 - **`DRL.ipynb`** – Implements the training and evaluation of the reinforcement learning model using **Deep Q-Networks (DQN)**.
 
 
