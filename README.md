@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project explores how Deep Reinforcement Learning (DRL) can be applied to optimize customer engagement across different sales channels. The goal is to determine the most effective sequence of communication methods (Email, Direct Mail, SMS, Calls) that lead to increased sales while reducing spam, minimizing customer unsubscriptions, and lowering overall contact costs. By using reinforcement learning, we can create a smarter and more efficient contact strategy that prioritizes meaningful interactions over excessive messaging. 
+This project explores how Deep Reinforcement Learning (DRL) can be applied to optimize customer engagement across different sales channels. The goal is to determine the most effective sequence of communication methods (Email, Direct Mail etc.) that lead to increased sales while reducing spam, minimizing customer unsubscriptions, and lowering overall contact costs. By using reinforcement learning, we can create a smarter and more efficient contact strategy that prioritizes meaningful interactions over excessive messaging. 
 
-To achieve this, we introduced **'No Action'** as a possible decision in our model, allowing the system to actively decide when not to contact a customer to avoid unnecessary outreach and costs.
+To achieve this, I introduced **'No Action'** as a possible decision in our model, allowing the system to actively decide when not to contact a customer to avoid unnecessary outreach and costs.
 
 ## Problem Statement
 
