@@ -97,10 +97,11 @@ Dataset Negative Reward Count: 752 out of 1000
 ![Model Evaluation Graph](images/ModelVsDataset3.png)
 
 
-These results highlight the benefits of reinforcement learning: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point, and a significant reduction in negative customer interactions. 
-By introducing 'No Action' as a decision, the model has successfully reduced unnecessary outreach, improving cost-effectiveness while avoiding unproductive contacts. 
-The 47.3% decrease in total contacts and the 81.2% reduction in negative interactions demonstrate how reinforcement learning optimizes engagement without compromising effectiveness. 
+These results highlight the benefits of reinforcement learning: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point, and a significant reduction in negative customer interactions.  
+By introducing 'No Action' as a decision, the model has successfully reduced unnecessary outreach, improving cost-effectiveness while avoiding unproductive contacts.  
+The 47.3% decrease in total contacts and the 81.2% reduction in negative interactions demonstrate how reinforcement learning optimizes engagement without compromising effectiveness.  
 Additionally, the model achieved a 66.8% reduction in cost per reward point, lowering costs from 1.6367 CHF in the dataset to 0.5440 CHF, ensuring a more resource-efficient approach to customer engagement.
+
 
 ### Model Application
 
