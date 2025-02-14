@@ -97,6 +97,7 @@ Dataset Cost per Reward Point: 1.0859 CHF
 
 ![Model Evaluation Graph](images/ModelVsDataset_2.png)
 
+![Model Evaluation Graph](images/ModelVsDataset_3.png)
 
 
 These results highlight the **benefits of reinforcement learning**: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point and reduced spam, while still achieving high customer interaction effectiveness. By introducing **'No Action'** as a decision, the model has successfully reduced unnecessary outreach, making contact strategies more efficient and cost-effective.
