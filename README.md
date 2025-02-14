@@ -115,6 +115,17 @@ It evaluates actions step-by-step, selecting only meaningful engagements and avo
 If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency.  
 This approach enables a data-driven strategy to maximize engagement while staying within budget. 
 
+Demonstration:
+```
+Step 1: Predicted action - DM_sent  
+Step 2: Predicted action - EMsent  
+Step 4: Predicted action - EMsent  
+
+Predicted Action Sequence: DM_sent → EMsent → EMsent
+```
+
+This prediction sequence shows the actions selected by the model for a given state to maximize engagement and revenue while staying within performance and budget constraints.
+
 ## License
 
 This project is licensed under the MIT License. See `LICENSE` for details.
