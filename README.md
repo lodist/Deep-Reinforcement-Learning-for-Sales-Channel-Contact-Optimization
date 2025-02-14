@@ -2,19 +2,24 @@
 
 ## Overview
 
-This project explores how Deep Reinforcement Learning (DRL) can be applied to optimize customer engagement across different sales channels. The goal is to determine the most effective sequence of communication methods (Email, Direct Mail etc.) that lead to increased sales while reducing spam, minimizing customer unsubscriptions and lowering overall contact costs. By using reinforcement learning, we can create a smarter and more efficient contact strategy that prioritizes meaningful interactions over excessive messaging. 
+This project explores how Deep Reinforcement Learning (DRL) can be applied to optimize customer engagement across different sales channels.  
+The goal is to determine the most effective sequence of communication methods (Email, Direct Mail etc.) that lead to increased sales while reducing spam, minimizing customer unsubscriptions and lowering overall contact costs.  
+By using reinforcement learning, we can create a smarter and more efficient contact strategy that prioritizes meaningful interactions over excessive messaging. 
 
 To achieve this, I introduced **'No Action'** as a possible decision in our model, allowing the system to actively decide when not to contact a customer to avoid unnecessary outreach and costs.
 
 ## Problem Statement
 
-Traditional marketing strategies often rely on static rules or heuristics to determine how and when to contact customers. However, customer behavior is dynamic and a one-size-fits-all approach can lead to suboptimal results. Excessive outreach can lead to increased costs and higher unsubscription rates, while insufficient engagement may reduce conversion rates. This project aims to leverage reinforcement learning to create a personalized strategy for each customer, learning from past interactions to maximize engagement and sales conversions while avoiding excessive unwanted contact and reducing operational costs. 
+Traditional marketing strategies often rely on static rules or heuristics to determine how and when to contact customers.  
+However, customer behavior is dynamic and a one-size-fits-all approach can lead to suboptimal results.  
+Excessive outreach can lead to increased costs and higher unsubscription rates, while insufficient engagement may reduce conversion rates. This project aims to leverage reinforcement learning to create a personalized strategy for each customer, learning from past interactions to maximize engagement and sales conversions while avoiding excessive unwanted contact and reducing operational costs. 
 
 By incorporating **'No Action'** as an option, our model learns when to refrain from engaging with a customer, leading to a more efficient, cost-effective and less intrusive communication strategy.
 
 ## Why Deep Reinforcement Learning?
 
-Deep Reinforcement Learning (DRL) is particularly well-suited for this problem because it allows an agent to learn optimal contact strategies dynamically through trial and error, rather than relying on static decision trees or predefined business rules. Unlike traditional machine learning approaches such as neural networks or random forest models, DRL provides the following advantages:
+Deep Reinforcement Learning (DRL) is particularly well-suited for this problem because it allows an agent to learn optimal contact strategies dynamically through trial and error, rather than relying on static decision trees or predefined business rules.  
+Unlike traditional machine learning approaches such as neural networks or random forest models, DRL provides the following advantages:
 
 - **Sequential Decision Making**: Unlike a classification or regression model that predicts a single outcome, DRL considers the long-term impact of each decision, ensuring that short-term gains do not lead to long-term losses (e.g., excessive messaging leading to unsubscriptions).
 - **Optimized Trade-offs**: The reward function in DRL ensures that the model balances engagement with the risk of spamming customers. It penalizes unnecessary contacts that receive no response while reinforcing behaviors that lead to successful conversions.
