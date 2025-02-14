@@ -97,11 +97,17 @@ Dataset Negative Reward Count: 752 out of 1000
 ![Model Evaluation Graph](images/ModelVsDataset3.png)
 
 
-These results highlight the benefits of reinforcement learning: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point, and a significant reduction in negative customer interactions. By introducing 'No Action' as a decision, the model has successfully reduced unnecessary outreach, improving cost-effectiveness while avoiding unproductive contacts. The 47.3% decrease in total contacts and the 81.2% reduction in negative interactions demonstrate how reinforcement learning optimizes engagement without compromising effectiveness. Additionally, the model achieved a 66.8% reduction in cost per reward point, lowering costs from 1.6367 CHF in the dataset to 0.5440 CHF, ensuring a more resource-efficient approach to customer engagement.
+These results highlight the benefits of reinforcement learning: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point, and a significant reduction in negative customer interactions. 
+By introducing 'No Action' as a decision, the model has successfully reduced unnecessary outreach, improving cost-effectiveness while avoiding unproductive contacts. 
+The 47.3% decrease in total contacts and the 81.2% reduction in negative interactions demonstrate how reinforcement learning optimizes engagement without compromising effectiveness. 
+Additionally, the model achieved a 66.8% reduction in cost per reward point, lowering costs from 1.6367 CHF in the dataset to 0.5440 CHF, ensuring a more resource-efficient approach to customer engagement.
 
 ### Model Application
 
-The trained model predicts the optimal contact sequence for a given customer state while allowing us to define the maximum number of contacts based on budget constraints. It evaluates actions step-by-step, selecting only meaningful engagements and avoiding unnecessary contact. If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency. This approach enables a data-driven strategy to maximize engagement while staying within budget.
+The trained model predicts the optimal contact sequence for a given customer state while allowing us to define the maximum number of contacts based on budget constraints. 
+It evaluates actions step-by-step, selecting only meaningful engagements and avoiding unnecessary contact. 
+If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency. 
+This approach enables a data-driven strategy to maximize engagement while staying within budget.
 
 ## License
 
