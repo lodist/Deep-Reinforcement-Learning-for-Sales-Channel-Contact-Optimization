@@ -110,21 +110,17 @@ Additionally, the model achieved a 66.8% reduction in cost per reward point, low
 
 ### Model Application
 
-The trained model predicts the optimal contact sequence for a given customer state while allowing us to define the maximum number of contacts based on budget constraints.  
-It evaluates actions step-by-step, selecting only meaningful engagements and avoiding unnecessary contact.  
-If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency.  
+The trained model predicts the optimal contact action for a given customer state.  
 This approach enables a data-driven strategy to maximize engagement while staying within budget. 
 
 Demonstration:
 ```
-Step 1: Predicted action - DM_sent  
-Step 2: Predicted action - EMsent  
-Step 4: Predicted action - EMsent  
-
-Predicted Action Sequence: DM_sent → EMsent → EMsent
+Predicted best action for state 959: No Action
+Predicted best action for state 810: EMsent
+Predicted best action for state 671: DM_sent
 ```
 
-This prediction sequence shows the actions selected by the model for a given state to maximize engagement and revenue while staying within performance and budget constraints.
+This prediction shows the actions selected by the model for a given state to maximize engagement and revenue while staying within performance and budget constraints.
 
 ## License
 
