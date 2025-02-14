@@ -105,10 +105,10 @@ Additionally, the model achieved a 66.8% reduction in cost per reward point, low
 
 ### Model Application
 
-The trained model predicts the optimal contact sequence for a given customer state while allowing us to define the maximum number of contacts based on budget constraints. 
-It evaluates actions step-by-step, selecting only meaningful engagements and avoiding unnecessary contact. 
-If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency. 
-This approach enables a data-driven strategy to maximize engagement while staying within budget.
+The trained model predicts the optimal contact sequence for a given customer state while allowing us to define the maximum number of contacts based on budget constraints.  
+It evaluates actions step-by-step, selecting only meaningful engagements and avoiding unnecessary contact.  
+If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency.  
+This approach enables a data-driven strategy to maximize engagement while staying within budget. 
 
 ## License
 
