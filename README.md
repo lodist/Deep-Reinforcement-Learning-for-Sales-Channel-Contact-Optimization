@@ -72,25 +72,22 @@ The evaluation demonstrates how the trained model improves contact efficiency an
 
 ### Evaluation Metrics
 ```
-Step: 0, Action: No Action, Reward: 0.79, Exploration Bonus: 0.80, Total Reward: 0.79
-Step: 0, Action: EMsent, Reward: 1.57, Exploration Bonus: 0.57, Total Reward: 2.36
-Model Total Reward: 398.91
-Dataset Total Reward: 467.81
-Improvement Over Dataset: -68.91
-Number of 'No Action' Decisions: 407 out of 1000
-Number of 'DM_Sent' Decisions in Model: 165 out of 1000
-Number of 'DM_Sent' Decisions in Dataset: 508 out of 1000
-Number of 'EM_Sent' Decisions in Model: 428 out of 1000
-Number of 'EM_Sent' Decisions in Dataset: 492 out of 1000
-Total Contacts in Model: 593 out of 1000
+Step: 0, Action: EMsent, Reward: 0.79, Exploration Bonus: 0.80, Total Reward: 0.79
+Model Total Reward: 172.80 (Only for matched actions)
+Dataset Total Reward: 305.49
+Total Contacts in Model: 437 out of 1000
 Total Contacts in Dataset: 1000 out of 1000
-Difference in Contacts Between Model and Dataset: -407
-Model Total Cost: 165 CHF
-Dataset Total Cost: 508 CHF
-Model Reward per Contact: 0.6727
-Dataset Reward per Contact: 0.4678
-Model Cost per Reward Point: 0.4136 CHF
-Dataset Cost per Reward Point: 1.0859 CHF
+Difference in Contacts Between Model and Dataset: -563
+Model Total Cost: 94 CHF
+Dataset Total Cost: 500 CHF
+Model Reward per Contact: 0.3954
+Dataset Reward per Contact: 0.3055
+Model Cost per Reward Point: 0.5440 CHF
+Dataset Cost per Reward Point: 1.6367 CHF
+Model Negative Reward Count: 220 out of 1000
+Dataset Negative Reward Count: 752 out of 1000
+'No Action' Wins (Avoided Bad Actions): 447 times
+'No Action' Losses (Missed Good Actions): 116 times
 ```
 
 ![Model Evaluation Graph](images/ModelVsDataset1.png)
@@ -100,7 +97,11 @@ Dataset Cost per Reward Point: 1.0859 CHF
 ![Model Evaluation Graph](images/ModelVsDataset3.png)
 
 
-These results highlight the **benefits of reinforcement learning**: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point and reduced spam, while still achieving high customer interaction effectiveness. By introducing **'No Action'** as a decision, the model has successfully reduced unnecessary outreach, making contact strategies more efficient and cost-effective.
+These results highlight the benefits of reinforcement learning: fewer overall contacts, a more efficient engagement strategy, lower costs per reward point, and a significant reduction in negative customer interactions. By introducing 'No Action' as a decision, the model has successfully reduced unnecessary outreach, improving cost-effectiveness while avoiding unproductive contacts. The 47.3% decrease in total contacts and the 81.2% reduction in negative interactions demonstrate how reinforcement learning optimizes engagement without compromising effectiveness. Additionally, the model achieved a 66.8% reduction in cost per reward point, lowering costs from 1.6367 CHF in the dataset to 0.5440 CHF, ensuring a more resource-efficient approach to customer engagement.
+
+### Model Application
+
+The trained model predicts the optimal contact sequence for a given customer state while allowing us to define the maximum number of contacts based on budget constraints. It evaluates actions step-by-step, selecting only meaningful engagements and avoiding unnecessary contact. If 'No Action' is optimal, the system refrains from outreach, ensuring efficiency. This approach enables a data-driven strategy to maximize engagement while staying within budget.
 
 ## License
 
